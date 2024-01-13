@@ -1,0 +1,5 @@
+.actor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 170px);
+  gap: 20px;
+}

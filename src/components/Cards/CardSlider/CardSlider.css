@@ -1,0 +1,57 @@
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 67px;
+  margin: 0;
+  color: var(--text-color);
+  transition: all 0.5s;
+  z-index: 3;
+}
+.swiper-button-next {
+  background: linear-gradient(270deg, #000000 35%, rgba(0, 0, 0, 0.5) 100%);
+  right: 0;
+}
+.swiper-button-prev {
+  background: linear-gradient(90deg, #000000 35%, rgba(0, 0, 0, 0.5) 100%);
+  left: 0;
+}
+.swiper-slide {
+  position: relative;
+  transition: all 0.5s;
+  border-radius: 10px;
+  z-index: 2;
+}
+.swiper-slide:hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+.swiper-slide:hover .movie-poster {
+  opacity: 0.3;
+}
+.movie-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -40%;
+  min-width: 150%;
+  background-color: #121212;
+  color: var(--text-color);
+  visibility: hidden;
+  z-index: 4;
+  border-radius: 10px;
+}
+.swiper-slide:hover .movie-info {
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+.movie-info-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.movie-info-desc {
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

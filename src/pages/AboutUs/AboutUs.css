@@ -1,0 +1,23 @@
+.about {
+  width: 100%;
+}
+.about h1 {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: center;
+}
+.about-section {
+  max-width: 1280px;
+  display: block;
+  margin: 30px auto;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+.about-heading {
+  font-size: 1.728rem;
+  font-weight: bold;
+}
+.about-section p {
+  font-size: 1rem;
+  padding: 10px 0;
+}

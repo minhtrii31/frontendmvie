@@ -1,0 +1,23 @@
+.comment {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: #1a1625;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+.comment-user {
+  font-weight: bold;
+  padding: 10px 0;
+}
+.comment-input {
+  background-color: #fff;
+  outline: none;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.comment-list {
+  border-bottom: 1px solid #ccc;
+}
