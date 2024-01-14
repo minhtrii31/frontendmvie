@@ -21,6 +21,13 @@ export async function getUserByEmail(email) {
 }
 export async function login(phone, password) {
   try {
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()]).{8,}$/;
+    if (!passwordRegex.test(password)) {
+      throw new Error(
+        "Mật khẩu phải có ít nhất 8 ký tự, chứa ít nhất một chữ thường, một chữ hoa, một số, và một ký tự đặc biệt."
+      );
+    }
     const res = await api.post("/api/users/login", {
       phone,
       password,
@@ -46,6 +53,13 @@ export async function logout() {
 }
 export async function register(name, email, phone, password) {
   try {
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()]).{8,}$/;
+    if (!passwordRegex.test(password)) {
+      throw new Error(
+        "Mật khẩu phải có ít nhất 8 ký tự, chứa ít nhất một chữ thường, một chữ hoa, một số, và một ký tự đặc biệt."
+      );
+    }
     const res = await api.post("/api/users/register", {
       name,
       phone,
@@ -68,6 +82,13 @@ export async function isEmailValid(email) {
 }
 export async function updateUser(id, userData) {
   try {
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()]).{8,}$/;
+    if (!passwordRegex.test(userData.password)) {
+      throw new Error(
+        "Mật khẩu phải có ít nhất 8 ký tự, chứa ít nhất một chữ thường, một chữ hoa, một số, và một ký tự đặc biệt."
+      );
+    }
     const res = await api.put(`/api/users/update/${id}`, userData);
     console.log(userData);
     if (res.status === 200) {
