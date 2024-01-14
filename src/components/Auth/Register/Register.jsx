@@ -74,6 +74,7 @@ function Register() {
                       Your Full Name
                     </label>
                     <input
+                      id="register_name"
                       type="text"
                       placeholder="Enter full name"
                       className="input"
@@ -86,6 +87,7 @@ function Register() {
                       Your Email
                     </label>
                     <input
+                      id="register_email"
                       type="text"
                       placeholder="Enter email"
                       className="input"
@@ -98,6 +100,7 @@ function Register() {
                       Your Phone
                     </label>
                     <input
+                      id="register_phone"
                       type="text"
                       placeholder="Enter phone number"
                       className="input"
@@ -110,6 +113,7 @@ function Register() {
                       Your Password
                     </label>
                     <input
+                      id="register_password"
                       type="password"
                       placeholder="Enter password"
                       className="input"
@@ -123,6 +127,7 @@ function Register() {
                       Please Repeat Password
                     </label>
                     <input
+                      id="register_password2"
                       type="password"
                       placeholder="Enter repeat password"
                       className="input"

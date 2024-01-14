@@ -24,6 +24,7 @@ function SearchBox({ onSearch, onSort }) {
     <div className="container">
       <div className="search">
         <input
+          id="search_input"
           type="text"
           className="search-input"
           placeholder="Enter title to search..."
@@ -45,6 +46,7 @@ function SearchBox({ onSearch, onSort }) {
         }}
       >
         <button
+          id="alpha"
           className={`buttonOutline sorting-button ${
             sortOption === "alphabetical" && "active"
           }`}
@@ -53,6 +55,7 @@ function SearchBox({ onSearch, onSort }) {
           Alphabetical
         </button>
         <button
+          id="releaseDate"
           className={`buttonOutline sorting-button ${
             sortOption === "releaseDate" && "active"
           }`}
@@ -61,6 +64,7 @@ function SearchBox({ onSearch, onSort }) {
           Release Date
         </button>
         <button
+          id="highest"
           className={`buttonOutline sorting-button ${
             sortOption === "highestRating" && "active"
           }`}

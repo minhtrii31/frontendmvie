@@ -38,6 +38,7 @@ function ForgotPassword() {
                   Please enter your phone
                 </label>
                 <input
+                  id="forgot_phone"
                   type="text"
                   placeholder="Your phone"
                   className="input"

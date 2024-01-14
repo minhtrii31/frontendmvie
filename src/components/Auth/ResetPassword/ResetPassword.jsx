@@ -46,6 +46,7 @@ function ResetPassword() {
                   Your new password
                 </label>
                 <input
+                  id="reset_password"
                   type="password"
                   placeholder="New Password"
                   value={pwd1}
@@ -58,6 +59,7 @@ function ResetPassword() {
                   Enter your new password
                 </label>
                 <input
+                  id="reset_password2"
                   type="password"
                   placeholder="Your new password again"
                   value={pwd2}

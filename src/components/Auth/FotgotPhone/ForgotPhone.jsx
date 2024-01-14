@@ -49,6 +49,7 @@ function ForgotPhone() {
                   Please enter your email
                 </label>
                 <input
+                  id="forgot_phone"
                   type="text"
                   placeholder="Your email"
                   className="input"

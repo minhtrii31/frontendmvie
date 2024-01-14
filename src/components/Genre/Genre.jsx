@@ -5,7 +5,7 @@ function Genre({ genres, onSelect }) {
   return (
     <>
       {genres.map((genre) => (
-        <li className="list-inline-item" key={genre._id}>
+        <li className="list-inline-item" key={genre._id} id={genre._id}>
           <button
             className="btn btn-outline-info"
             onClick={() => onSelect(genre._id)}

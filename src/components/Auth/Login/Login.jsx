@@ -54,6 +54,7 @@ function Login() {
                       Your Phone
                     </label>
                     <input
+                      id="login_phone"
                       type="text"
                       placeholder="Enter phone number"
                       className="input"
@@ -66,6 +67,7 @@ function Login() {
                       Your Password
                     </label>
                     <input
+                      id="login_password"
                       type="password"
                       placeholder="Enter password"
                       className="input"
